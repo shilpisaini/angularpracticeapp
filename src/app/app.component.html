@@ -22,3 +22,10 @@
 <nav>
   <a routerLink="/home">Home</a>
 </nav>
+
+<h2>PARENT COMPONENT</h2>
+Parent Data:{{pdata}}<br>
+Child Data:{{pcdata}}
+
+<br>
+<app-child [cpdata]="pdata" (msgEvent) = "receiveValue($event)"></app-child>

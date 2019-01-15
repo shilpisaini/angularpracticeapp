@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-practice-app';
+  pdata = 'I am from Parent Component';
+  pcdata:string;
+
+  receiveValue($event){
+    this.pcdata= $event;
+  }
 }
